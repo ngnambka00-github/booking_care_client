@@ -1,0 +1,25 @@
+.btn-action {
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    transition: ease 0.5s;
+    &:hover {
+        background: transparent;
+    }
+}
+.btn-edit {
+    color: #e58609;
+    &:hover {
+        color: #b16707;
+    }
+    
+}
+.btn-delete {
+    color: #ff1010;
+    &:hover {
+        color: #b10000;
+    }
+}

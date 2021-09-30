@@ -1,0 +1,123 @@
+.home-header-banner {
+    background: url('../../../assets/images/header-background.jpg') center center no-repeat;
+    background-color: #ffffff;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+
+
+    .content-up {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, rgba(46, 46, 46, 0.384) 0%, transparent 100%);
+        
+        .title-1 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            color: white;
+            text-shadow: 1px 1px 1px #333;
+            margin: 0px 0 10px;
+        }
+    
+        .title-2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #333;
+        }
+    
+        .search {
+            width: fit-content;
+            margin: 20px auto 0px;
+            padding: 10px;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            border-radius: 30px;
+            background-color: #f7d800;
+    
+            i {
+                margin: 0 5px;
+            }
+    
+            input {
+                height: 30px;
+                width: 380px;
+                padding: 0 10px;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #424242;
+            }
+        }
+    }
+
+    .content-down {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom, transparent 0%, white 70%);
+
+        .option {
+            height: 65px;
+
+            .option-child {
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                cursor: pointer;
+                margin: 0 5px;
+
+                .icon-child {
+                    width: 50px;
+                    height: 50px;
+                    
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    background-color: white;
+                    border-radius: 50%;
+                    border: 1px solid rgb(168, 168, 168);
+                    box-shadow: 0 3px 10px #37b8de57;
+
+
+                    i {
+                        font-size: 28px;
+                        color: #4bc4d3;
+                    }
+                }
+
+                .text-child {
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+
+                &:hover {
+                    .text-child {
+                        color: #4bc4d3;
+                    }
+                }
+            }
+        }
+    }   
+
+    
+    
+}
