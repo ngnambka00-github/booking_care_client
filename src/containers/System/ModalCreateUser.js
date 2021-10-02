@@ -181,7 +181,7 @@ class ModalCreateUser extends Component {
 
                             <div className="col-4 form-group mt-2">
                                 <label>Gender</label>
-                                <select class="form-control"
+                                <select className="form-control"
                                     onChange={(event) => this.handlerOnChangeInput(event, "gender")}>
                                     <option selected value="1">Male</option>
                                     <option value="0">Female</option>
@@ -190,7 +190,7 @@ class ModalCreateUser extends Component {
 
                             <div className="col-4 form-group mt-2">
                                 <label>Role</label>
-                                <select class="form-control"
+                                <select className="form-control"
                                     onChange={(event) => this.handlerOnChangeInput(event, "roleId")}>
                                     <option selected value="1">Admin</option>
                                     <option value="2">Doctor</option>

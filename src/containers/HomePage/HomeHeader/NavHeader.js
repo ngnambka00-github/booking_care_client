@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import classNames from 'classnames';
 import './NavHeader.scss';
 import { LANGUAGES } from '../../../utils';
 import { changeLanguageApp } from '../../../store/actions';
@@ -81,11 +82,19 @@ class NavHeader extends Component {
                             </div>
 
                             <div className="flag">
-                                <span className={language === LANGUAGES.VI ? "language flag-vi active" : "language flag-vi"}
+                                <span
+                                    className={classNames('language', 'flag-vi', {
+                                        active: language === LANGUAGES.VI
+                                    })}
                                     onClick={() => this.onChangeLanguage(LANGUAGES.VI)}>
                                     VI
                                 </span>
-                                <span className={language === LANGUAGES.EN ? "language flag-en active" : "language flag-en"}
+                                <span
+                                    className={classNames({
+                                        language: true,
+                                        'flag-en': true,
+                                        active: language === LANGUAGES.EN
+                                    })}
                                     onClick={() => this.onChangeLanguage(LANGUAGES.EN)}>
                                     EN
                                 </span>

@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 import NavHeader from './HomeHeader/NavHeader';
 import BannerHeader from './HomeHeader/BannerHeader';
 import Specialty from './Section/Specialty';
+import OutstandingFacility from './Section/OutstandingFacility';
+import OutstandingDoctor from './Section/OutstandingDoctor';
+import Handbook from './Section/Handbook';
+import Footer from './Section/Footer';
 
 class HomePage extends Component {
 
@@ -15,6 +19,10 @@ class HomePage extends Component {
                 </div>
                 <div className="sections" style={{ height: '700px' }}>
                     <Specialty />
+                    <OutstandingFacility />
+                    <OutstandingDoctor />
+                    <Handbook />
+                    <Footer />
                 </div>
             </>
         );

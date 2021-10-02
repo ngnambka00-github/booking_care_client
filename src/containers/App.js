@@ -39,40 +39,36 @@ class App extends Component {
 
     render() {
         return (
-            <>
-                <Router history={history}>
-                    <div className="root-container">
-                        {this.props.isLoggedIn && <Header />}
+            <Router history={history}>
+                <div className="root-container">
+                    <div className="content-container">
+                        <CustomScrollbars
+                            style={{ width: '100vw', height: '100vh' }}
+                        >
+                            <Switch>
+                                <Route path={path.HOME} exact component={(Home)} />
+                                <Route path={path.HOMEPAGE} component={(HomePage)} />
 
-                        <div className="content-container">
-                            <CustomScrollbars
-                                style={{ width: '100vw', height: '100vh' }}
-                            >
-                                <Switch>
-                                    <Route path={path.HOME} exact component={(Home)} />
-                                    <Route path={path.HOMEPAGE} component={HomePage} />
-
-                                    {/* Hàm userIsAuthenticated là để xác định quyền truy cập */}
-                                    <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
-                                    <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
-                                </Switch>
-                            </CustomScrollbars>
-                        </div>
-
-                        <ToastContainer
-                            position="top-right"
-                            autoClose={4000}
-                            hideProgressBar={false}
-                            newestOnTop={false}
-                            closeOnClick
-                            rtl={false}
-                            pauseOnFocusLoss={false}
-                            draggable={false}
-                            pauseOnHover={false}
-                        />
+                                {/* Hàm userIsAuthenticated là để xác định quyền truy cập */}
+                                <Route path={path.LOGIN} component={userIsNotAuthenticated(Login)} />
+                                <Route path={path.SYSTEM} component={userIsAuthenticated(System)} />
+                            </Switch>
+                        </CustomScrollbars>
                     </div>
-                </Router>
-            </>
+
+                    <ToastContainer
+                        position="top-right"
+                        autoClose={4000}
+                        hideProgressBar={false}
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        pauseOnFocusLoss={false}
+                        draggable={false}
+                        pauseOnHover={false}
+                    />
+                </div>
+            </Router>
         )
     }
 }

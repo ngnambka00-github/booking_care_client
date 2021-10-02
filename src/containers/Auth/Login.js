@@ -49,7 +49,7 @@ class Login extends Component {
             } else if (data && data.errorCode === 0) {
                 // Thực hiện công việc khi login thành công
                 this.props.userLoginSuccess(data.user);
-                console.log("Todo login thành công");
+                // console.log("Todo login thành công");
             }
         } catch (error) {
             // Nếu có lỗi thì xuất ra thông báo lỗi

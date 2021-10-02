@@ -8,8 +8,6 @@ import { FormattedMessage } from 'react-intl';
 class BannerHeader extends Component {
 
     render = () => {
-        console.log(">> check props: ", this.props);
-
         return (
             <>
                 <div className="home-header-banner">
@@ -21,7 +19,7 @@ class BannerHeader extends Component {
                             <FormattedMessage id="bannerheader.title2" />
                         </div>
                         <div className="search">
-                            <i class="fas fa-search"></i>
+                            <i className="fas fa-search"></i>
                             <input type="text" placeholder={this.props.language === 'vi' ? 'Tìm lý do khám' : 'Find a reason to check'} />
                         </div>
                     </div>
@@ -30,7 +28,7 @@ class BannerHeader extends Component {
                         <div className="option">
                             <div className="option-child">
                                 <div className="icon-child">
-                                    <i class="far fa-hospital"></i>
+                                    <i className="far fa-hospital"></i>
                                 </div>
                                 <div className="text-child">
                                     <FormattedMessage id="bannerheader.special-medical-examination" />
@@ -41,7 +39,7 @@ class BannerHeader extends Component {
                         <div className="option">
                             <div className="option-child">
                                 <div className="icon-child">
-                                    <i class="fas fa-hospital-alt"></i>
+                                    <i className="fas fa-hospital-alt"></i>
                                 </div>
                                 <div className="text-child">
                                     <FormattedMessage id="bannerheader.remote-medical-examination" />
@@ -52,7 +50,7 @@ class BannerHeader extends Component {
                         <div className="option">
                             <div className="option-child">
                                 <div className="icon-child">
-                                    <i class="fas fa-procedures"></i>
+                                    <i className="fas fa-procedures"></i>
                                 </div>
                                 <div className="text-child">
                                     <FormattedMessage id="bannerheader.physical-medical-examination" />
@@ -63,7 +61,7 @@ class BannerHeader extends Component {
                         <div className="option">
                             <div className="option-child">
                                 <div className="icon-child">
-                                    <i class="fas fa-hospital-symbol"></i>
+                                    <i className="fas fa-hospital-symbol"></i>
                                 </div>
                                 <div className="text-child">
                                     <FormattedMessage id="bannerheader.medical-test" />
@@ -74,7 +72,7 @@ class BannerHeader extends Component {
                         <div className="option">
                             <div className="option-child">
                                 <div className="icon-child">
-                                    <i class="fas fa-briefcase-medical"></i>
+                                    <i className="fas fa-briefcase-medical"></i>
                                 </div>
                                 <div className="text-child">
                                     <FormattedMessage id="bannerheader.mental-health" />
@@ -85,7 +83,7 @@ class BannerHeader extends Component {
                         <div className="option">
                             <div className="option-child">
                                 <div className="icon-child">
-                                    <i class="fas fa-ambulance"></i>
+                                    <i className="fas fa-ambulance"></i>
                                 </div>
                                 <div className="text-child">
                                     <FormattedMessage id="bannerheader.dental-examination" />

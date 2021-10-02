@@ -155,7 +155,7 @@ class ModalEditUser extends Component {
 
                             <div className="col-4 form-group mt-2">
                                 <label>Gender</label>
-                                <select class="form-control"
+                                <select className="form-control"
                                     onChange={(event) => this.handlerOnChangeInput(event, "gender")} value={this.state.gender}>
                                     <option value="1">Male</option>
                                     <option value="0">Female</option>
@@ -164,7 +164,7 @@ class ModalEditUser extends Component {
 
                             <div className="col-4 form-group mt-2">
                                 <label>Role</label>
-                                <select class="form-control"
+                                <select className="form-control"
                                     disabled
                                     onChange={(event) => this.handlerOnChangeInput(event, "roleId")}
                                     value={this.state.roleId}

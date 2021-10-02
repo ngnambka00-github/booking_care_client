@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FormattedMessage } from 'react-intl';
 import Section from './Section';
 
-class Specialty extends Component {
+class OutstandingFacility extends Component {
 
     render = () => {
         let settings = {
@@ -24,88 +24,88 @@ class Specialty extends Component {
 
         return (
             <Section
-                title={"Chuyên khoa phổ biến"}
-                buttonTitle={"Xem thêm"}
-                backgroundColor={"#ffffff"}>
+                title={"Cơ sở y tế nổi bật"}
+                buttonTitle={"Tìm kiếm"}
+                backgroundColor={"#f5f5f5"}>
                 <Slider {...settings}>
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
 
                     <div className="item-specialty">
                         <div className="item-image">
-                            <img src="https://cdn.bookingcare.vn/fr/w300/2019/12/16/182233-viem-gan.jpg" />
+                            <img src="https://cdn.bookingcare.vn/fr/w500/2020/06/03/114348-bv-viet-duc.jpg" />
                         </div>
                         <div className="item-description">
-                            <span>Bệnh viêm gan</span>
+                            <span>Bệnh viện Hữu nghị Việt Đức</span>
                         </div>
                     </div>
                 </Slider>
@@ -127,4 +127,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Specialty);
+export default connect(mapStateToProps, mapDispatchToProps)(OutstandingFacility);
